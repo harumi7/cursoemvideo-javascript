@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos e ternários</title>
+</head>
+<body>
+    <script>
+        // operadores lógicos (em ordem de precedência): ! > && > ||
+        // ordem: operadores aritméticos > operadores relacionais > operadores lógicos
+        var x = 2 > 8 && 8 % 2 == 0 // false
+
+        // operadores ternários: ?, : (teste ? true : false)
+        var media = 6.20
+        media > 7 ? document.write('Aprovado') : document.write('Reprovado')
+        
+        var y = 8
+        var res = 8 % 2 == 0 ? 5 : 9
+        document.write(res) // 5
+    </script>
+</body>
+</html>

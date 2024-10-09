@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Javascript!</title>
+    <style>
+        body {
+            background-color: rgb(143, 70, 143);
+        }
+
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, how are you?</h1>
+    <p>Hello! What are you up to?</p>
+    <script>
+        // var name = window.prompt("Please, tell me your name.")
+        // window.alert("Nice to meet you, " + name + "!")
+
+        // Just using Number(window.prompt('Give me a number.')) also works!
+        var n1 = Number.parseFloat(window.prompt("Give me a number."))
+        var n2 = Number.parseFloat(window.prompt("Give me one more number."))
+        var soma = n1 + n2
+        window.alert(`A soma dos dois números em number é: ${soma}`)
+
+        // Can be used String() or n.toString()
+        window.alert(`A soma dos dois números em string é: ${String(soma)}`)
+    </script>
+</body>
+</html>

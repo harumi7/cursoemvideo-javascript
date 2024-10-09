@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos em DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <h2>O que é DOM?</h2>
+    <p>Document Object Model</p>
+    <h2>Árvore DOM</h2>
+    <p>Árvore DOM é uma hierarquia de elementos, sendo o window a raíz!</p>
+    <div id="mensagem">Clique aqui</div>
+
+    <script>
+        var texto = window.document.getElementsByTagName('h2')[0]
+        texto.style.color = 'white'
+
+        var p = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito assim: ${p.innerHTML}`) // innerText não pega o HTML que esá dentro da tag p, apenas o conteúdo
+
+        var x = window.document.getElementById('mensagem')
+        x.style.backgroundColor = 'yellow'
+        x.innerText = 'Teste com getElementById'
+
+        var y = window.document.querySelector('div#mensagem')
+        y.style.backgroundColor = 'white'
+        y.innerText = 'Teste com querySelector'
+    </script>
+</body>
+</html>
